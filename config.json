@@ -1,0 +1,9 @@
+{
+    "ReturnIP": "",
+    "WebHook": "",
+    "Cloudflare": {
+        "token": "",
+        "URL": "",
+        "Domain": ""
+    }
+}
