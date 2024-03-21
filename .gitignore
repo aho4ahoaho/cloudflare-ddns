@@ -1,0 +1,4 @@
+*.json
+*
+!main.go
+!config.example.json
