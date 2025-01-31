@@ -46,7 +46,7 @@ var Domain = regexp.MustCompile(`^((?:\w*?\.)*)([\w-]+?\.\w{2,5})$`)
 
 func main() {
 	//WebhookとIPを返すURLを取得する。
-	config := readToken()
+	config := readConfig()
 
 	//IPアドレスを取得する
 	my_ip, _ := getIP(config.ReturnIP)
@@ -216,7 +216,7 @@ func updateRecord(Token string, ZoneID string, RecordID string, RecordInfo Recor
 	return nil
 }
 
-func readToken() Config {
+func readConfig() Config {
 	//実行ファイルと同じフォルダへのパスを作る
 	exe, err := os.Executable()
 	exe = filepath.Dir(exe)
